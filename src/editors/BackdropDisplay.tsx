@@ -54,8 +54,8 @@ const BackdropDisplay: React.FC = () => {
           title="Color"
         >
           <ColorPickerPanel
-            style={{ width: "100%" }}
             key={canvasInstance?.toString()}
+            style={{ width: "100%" }}
             format="CSS"
             recentColors={null}
             swatchColors={GRADIENT_PRESET}

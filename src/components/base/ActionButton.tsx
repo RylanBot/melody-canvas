@@ -41,9 +41,9 @@ const ActionButton: React.FC<ActionButtonProps> = ({ disabled, onAdd }) => {
       shape="round"
       size="small"
       suffix={<div className={action.icon}></div>}
-      onClick={action.onClick}
       theme={action.theme}
       {...(action.disabled && { disabled: action.disabled })}
+      onClick={action.onClick}
     >
       <span className="font-bold">{action.text}</span>
     </Button>

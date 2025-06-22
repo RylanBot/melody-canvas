@@ -96,8 +96,8 @@ const ExportDialog: React.FC = () => {
         <Button
           theme="primary"
           variant="outline"
-          onClick={() => setDialogVisible(true)}
           disabled={!audioFile}
+          onClick={() => setDialogVisible(true)}
         >
           <div className="flex-center font-bold">
             <div className="i-ri:folder-video-line mr-4"></div>
@@ -126,12 +126,12 @@ const ExportDialog: React.FC = () => {
         <p className="my-2">You can close this dialog and continue editing the canvas while it is processing.</p>
 
         <Button
+          className="float-right"
+          size="small"
           theme="primary"
           variant="outline"
-          onClick={exportVideo}
-          size="small"
           disabled={queueIsFull}
-          className="float-right"
+          onClick={exportVideo}
         >
           <div className="flex-center font-bold">
             <div className="i-material-symbols:slow-motion-video mr-2"></div>

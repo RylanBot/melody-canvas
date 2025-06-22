@@ -113,8 +113,8 @@ const SideNav: React.FC = () => {
               target="_blank"
             >
               <img
-                src="/image/favicon.png"
                 className="w-8 h-8 mx-auto rounded-lg shadow-md"
+                src="/image/favicon.png"
               />
               <p
                 className="py-2 font-sans font-bold text-xs text-emerald-800"

@@ -18,19 +18,19 @@ const TopNav: React.FC = () => {
       >
         {/* 主题切换 */}
         <Tabs
-          theme="card"
           className="rounded-sm h-8 w-16 flex-center border border-emerald-700 dark:border-dark-50 max-lg:scale-80"
+          theme="card"
           value={themeMode}
           onChange={(mode) => setThemeMode(mode as "light" | "dark")}
         >
           <TabPanel
-            value="light"
             className="w-4 flex-center"
+            value="light"
             label={<div className="i-material-symbols:sunny text-lg"></div>}
           ></TabPanel>
           <TabPanel
-            value="dark"
             className="w-4 flex-center"
+            value="dark"
             label={<div className="i-material-symbols:nightlight text-lg"></div>}
           ></TabPanel>
         </Tabs>

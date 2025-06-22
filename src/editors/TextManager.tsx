@@ -136,9 +136,9 @@ const TextManager: React.FC = () => {
         {/* 文本 */}
         <Textarea
           placeholder="Input something..."
+          disabled={activeTextList.length > 1}
           value={text}
           onChange={(val) => updateText(val)}
-          disabled={activeTextList.length > 1}
         />
       </div>
 
@@ -182,12 +182,12 @@ const TextManager: React.FC = () => {
           {/* 字体 */}
           <OptionCard title="Font">
             <SelectInput
-              value={textOptions.fontFamily}
-              popupVisible={popupVisible}
-              placeholder="Select or Input"
               allowInput
               clearable
+              placeholder="Select or Input"
               style={INPUT_STYLE}
+              value={textOptions.fontFamily}
+              popupVisible={popupVisible}
               onInputChange={(font) => updateTextOptions({ fontFamily: font })}
               onPopupVisibleChange={(visible) => setPopupVisible(visible)}
               panel={
