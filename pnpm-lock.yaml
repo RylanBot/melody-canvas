@@ -33,8 +33,8 @@ importers:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
       tdesign-react:
-        specifier: ^1.12.0
-        version: 1.12.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^1.13.1
+        version: 1.13.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       zustand:
         specifier: ^5.0.0-rc.2
         version: 5.0.3(@types/react@18.3.18)(react@18.3.1)
@@ -1387,8 +1387,8 @@ packages:
       react: '>=16.13.1'
       react-dom: '>=16.13.1'
 
-  tdesign-react@1.12.0:
-    resolution: {integrity: sha512-9arAR3Hb66kP4eHigVIQIGKgqy0v82f3+d0rrKB4W/O0Qr+8G1FmFD0WZ/ACf5pWGKDtMgTkTklQAp3hMsBSgA==}
+  tdesign-react@1.13.1:
+    resolution: {integrity: sha512-SPQNIoMFYUJraH83cu6F2VvQgX19XaVPwrQ/iMxk9f8jqrltcncXcoQwmT3rdqFPu1w0u9x68Kap4BZUmLwxRA==}
     peerDependencies:
       react: '>=16.13.1'
       react-dom: '>=16.13.1'
@@ -1471,8 +1471,8 @@ packages:
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
-  validator@13.7.0:
-    resolution: {integrity: sha512-nYXQLCBkpJ8X6ltALua9dRrZDHVYxjJ1wgskNt1lH9fzGjs3tgojGSCBjmEPwkWS1y29+DrizMTW19Pr9uB2nw==}
+  validator@13.15.15:
+    resolution: {integrity: sha512-BgWVbCI72aIQy937xbawcs+hrVaN/CZ2UwutgaJ36hGqRrLNM+f5LUT/YPRbo8IV/ASeFzXszezV+y2+rq3l8A==}
     engines: {node: '>= 0.10'}
 
   vite@5.4.14:
@@ -3048,7 +3048,7 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  tdesign-react@1.12.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  tdesign-react@1.13.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@babel/runtime': 7.26.10
       '@popperjs/core': 2.11.8
@@ -3070,7 +3070,7 @@ snapshots:
       tdesign-icons-react: 0.5.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       tinycolor2: 1.6.0
       tslib: 2.3.1
-      validator: 13.7.0
+      validator: 13.15.15
 
   tinycolor2@1.6.0: {}
 
@@ -3169,7 +3169,7 @@ snapshots:
   util-deprecate@1.0.2:
     optional: true
 
-  validator@13.7.0: {}
+  validator@13.15.15: {}
 
   vite@5.4.14(@types/node@22.13.5):
     dependencies:
