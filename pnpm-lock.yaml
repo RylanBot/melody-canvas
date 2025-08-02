@@ -33,8 +33,8 @@ importers:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
       tdesign-react:
-        specifier: ^1.13.1
-        version: 1.13.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^1.13.2
+        version: 1.13.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       zustand:
         specifier: ^5.0.0-rc.2
         version: 5.0.3(@types/react@18.3.18)(react@18.3.1)
@@ -504,9 +504,6 @@ packages:
 
   '@types/sortablejs@1.15.8':
     resolution: {integrity: sha512-b79830lW+RZfwaztgs1aVPgbasJ8e7AXtZYHTELNXZPsERt4ymJdjV4OccDbHQAvHrCcFpbF78jkm0R6h/pZVg==}
-
-  '@types/tinycolor2@1.4.6':
-    resolution: {integrity: sha512-iEN8J0BoMnsWBqjVbWH/c0G0Hh7O21lpR2/+PrvAVgWdzL7eexIFm4JN/Wn10PTcmNdtS6U67r499mlWMXOxNw==}
 
   '@types/validator@13.12.3':
     resolution: {integrity: sha512-2ipwZ2NydGQJImne+FhNdhgRM37e9lCev99KnqkbFHd94Xn/mErARWI1RSLem1QA19ch5kOhzIZd7e8CA2FI8g==}
@@ -1387,14 +1384,11 @@ packages:
       react: '>=16.13.1'
       react-dom: '>=16.13.1'
 
-  tdesign-react@1.13.1:
-    resolution: {integrity: sha512-SPQNIoMFYUJraH83cu6F2VvQgX19XaVPwrQ/iMxk9f8jqrltcncXcoQwmT3rdqFPu1w0u9x68Kap4BZUmLwxRA==}
+  tdesign-react@1.13.2:
+    resolution: {integrity: sha512-d+T4y3llqpL5U1sRSktU2tS4Ureph50UzitYzhfRS1DYZvmW606+mnm0otkxgXoRJkBklEPOtV6xqBNbcgoSiQ==}
     peerDependencies:
       react: '>=16.13.1'
       react-dom: '>=16.13.1'
-
-  tinycolor2@1.6.0:
-    resolution: {integrity: sha512-XPaBkWQJdsf3pLKJV9p4qN/S+fm2Oj8AIPo1BTUhg5oxkvm9+SVEGFdhyOz7tTdUTfvxMiAs4sp6/eZO2Ew+pw==}
 
   tinyexec@0.3.2:
     resolution: {integrity: sha512-KQQR9yN7R5+OSwaK0XQoj22pwHoTlgYqmUscPYoknOoWCWfj/5/ABTMRi69FrKU5ffPVh5QcFikpWJI/P1ocHA==}
@@ -1959,8 +1953,6 @@ snapshots:
       csstype: 3.1.3
 
   '@types/sortablejs@1.15.8': {}
-
-  '@types/tinycolor2@1.4.6': {}
 
   '@types/validator@13.12.3': {}
 
@@ -3048,12 +3040,11 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  tdesign-react@1.13.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  tdesign-react@1.13.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@babel/runtime': 7.26.10
       '@popperjs/core': 2.11.8
       '@types/sortablejs': 1.15.8
-      '@types/tinycolor2': 1.4.6
       '@types/validator': 13.12.3
       classnames: 2.5.1
       dayjs: 1.11.10
@@ -3068,11 +3059,8 @@ snapshots:
       react-transition-group: 4.4.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       sortablejs: 1.15.6
       tdesign-icons-react: 0.5.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      tinycolor2: 1.6.0
       tslib: 2.3.1
       validator: 13.15.15
-
-  tinycolor2@1.6.0: {}
 
   tinyexec@0.3.2: {}
 
