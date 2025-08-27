@@ -17,7 +17,7 @@
     "lodash": "^4.17.21",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "tdesign-react": "^1.13.2",
+    "tdesign-react": "^1.14.5",
     "zustand": "^5.0.0-rc.2"
   },
   "devDependencies": {
