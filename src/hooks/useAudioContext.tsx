@@ -6,7 +6,8 @@ type AudioEventListeners = {
   onEnd?: () => void;
 };
 
-const useAudioContext = (audioRef: React.RefObject<HTMLAudioElement>) => {
+const useAudioContext = () => {
+  const audioRef = useRef<HTMLAudioElement | null>(null);
   // 避免同一个 audio 被绑定到多个不同节点
   const audioContextRef = useRef<AudioContext | null>(null);
   // 绑定外部的音频事件处理
@@ -44,9 +45,10 @@ const useAudioContext = (audioRef: React.RefObject<HTMLAudioElement>) => {
       audioRef.current?.removeEventListener("pause", handlePause);
       audioRef.current?.removeEventListener("ended", handleEnd);
     };
-  }, [audioRef.current]);
+  }, []);
 
   return {
+    audioRef,
     audioListenersRef
   };
 };

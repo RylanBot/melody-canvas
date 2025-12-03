@@ -4,16 +4,15 @@ import { useAudioContext } from "@/hooks";
 import { useAudioStore, useCanvasStore } from "@/stores";
 
 const useAudioVisualization = () => {
-  const audioRef = useRef<HTMLAudioElement | null>(null);
-  const reqIDRef = useRef<number | null>(null);
+  const reqIdRef = useRef<number | null>(null);
 
   const { audioBuffer } = useAudioStore();
   const { canvasInstance, builderFactory } = useCanvasStore();
-  const { audioListenersRef } = useAudioContext(audioRef);
+  const { audioRef, audioListenersRef } = useAudioContext();
 
   const drawAll = () => {
     builderFactory!.drawAll(audioBuffer!, audioRef.current!.currentTime);
-    reqIDRef.current = requestAnimationFrame(drawAll);
+    reqIdRef.current = requestAnimationFrame(drawAll);
   };
 
   useEffect(() => {
@@ -24,10 +23,10 @@ const useAudioVisualization = () => {
     };
 
     const handlePause = () => {
-      if (reqIDRef.current) {
-        cancelAnimationFrame(reqIDRef.current);
+      if (reqIdRef.current) {
+        cancelAnimationFrame(reqIdRef.current);
       }
-      reqIDRef.current = null;
+      reqIdRef.current = null;
     };
 
     audioListenersRef.current = {
@@ -36,8 +35,8 @@ const useAudioVisualization = () => {
     };
 
     return () => {
-      if (reqIDRef.current) {
-        cancelAnimationFrame(reqIDRef.current);
+      if (reqIdRef.current) {
+        cancelAnimationFrame(reqIdRef.current);
       }
     };
   }, [canvasInstance, audioBuffer]);
