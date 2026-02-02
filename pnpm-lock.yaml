@@ -23,9 +23,6 @@ importers:
       fft.js:
         specifier: ^4.0.4
         version: 4.0.4
-      lodash:
-        specifier: ^4.17.21
-        version: 4.17.21
       lodash-es:
         specifier: ^4.17.21
         version: 4.17.21
@@ -48,9 +45,6 @@ importers:
       '@types/chroma-js':
         specifier: ^3.1.1
         version: 3.1.1
-      '@types/lodash':
-        specifier: ^4.17.13
-        version: 4.17.15
       '@types/lodash-es':
         specifier: ^4.17.12
         version: 4.17.12
@@ -1079,9 +1073,6 @@ packages:
 
   lodash-es@4.17.21:
     resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
-
-  lodash@4.17.21:
-    resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
 
   loose-envify@1.4.0:
     resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
@@ -2707,8 +2698,6 @@ snapshots:
       quansync: 0.2.10
 
   lodash-es@4.17.21: {}
-
-  lodash@4.17.21: {}
 
   loose-envify@1.4.0:
     dependencies:

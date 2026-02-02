@@ -1,5 +1,5 @@
 import { FabricObject, Group } from "fabric";
-import { cloneDeep } from "lodash";
+import { cloneDeep } from "lodash-es";
 
 import { createGradientMap, getObjectTransformations } from "@/libs/canvas";
 import FrequencyAnalyzer from "./FrequencyAnalyzer";

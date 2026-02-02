@@ -1,5 +1,5 @@
 import { FabricObject } from "fabric";
-import { pick } from "lodash";
+import { pick } from "lodash-es";
 
 export const cloneFabricObject = async (source: FabricObject) => {
   const newObject = await source.clone();
